@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Смарт-годинники Galaxy Watch7</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <div class="cart">
+  🛒 Кошик: <span id="cart-count">0</span>
+</div>
 </head>
 <body>
 
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Ваш гаманець</h2>
+        <div id="cart-items-list">
+            </div>
+        <hr>
+        <div class="cart-total">
+            Загальна сума: <span id="total-amount">0</span> ₴
+        </div>
+        <button id="checkout-btn" class="pay-btn">Оплатити покупку</button>
+    </div>
+</div>
     <header>
         <div class="container">
             <span class="logo">SAMSUNG Experience Store</span>
@@ -41,7 +56,7 @@
                                 <li>🔋 До 3-х днів роботи</li>
                             </ul>
                             <div class="product-price">21 999 ₴</div>
-                            <a href="#" class="cta-button">Придбати</a>
+                           <button  class="buy-btn">Додати у кошик</button>
                         </div>
                     </div>
 
@@ -57,7 +72,7 @@
                                 <li>🩸 Біоактивний сенсор</li>
                             </ul>
                             <div class="product-price">17 999 ₴</div>
-                            <a href="#" class="cta-button">Придбати</a>
+                          <button  class="buy-btn">Додати у кошик</button>
                         </div>
                     </div>
 
@@ -73,7 +88,7 @@
                                 <li>📲 Wear OS від Samsung</li>
                             </ul>
                             <div class="product-price">13 999 ₴</div>
-                            <a href="#" class="cta-button">Придбати</a>
+                          <button  class="buy-btn">Додати у кошик</button>
                         </div>
                     </div>
 
